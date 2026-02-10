@@ -1,0 +1,80 @@
+.ublacklist-add-button {
+	position: absolute !important;
+	top: 5px;
+	right: 5px;
+	background: #007cba !important;
+	color: white !important;
+	border: 2px solid #005a87 !important;
+	border-radius: 4px;
+	padding: 6px 10px;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 2147483647 !important;
+	opacity: 1 !important;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ublacklisthelper_hide {
+	visibility: hidden;
+}
+
+.ublacklist-add-button:hover {
+	background: #005a87 !important;
+	transform: translateY(-1px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ublacklist-add-button:focus {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.ublacklist-color-popup {
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 140px;
+}
+
+.severity-button {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 8px 12px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	transition:
+		transform 0.1s,
+		box-shadow 0.1s;
+	color: black;
+	margin: 2px;
+	text-align: start;
+}
+
+.severity-button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.severity-great {
+	background: lightskyblue !important;
+}
+
+.severity-good {
+	background: mediumseagreen !important;
+}
+
+.severity-mediocre {
+	background: yellow !important;
+}
+
+.severity-bad {
+	background: palevioletred !important;
+}

@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+	"name": "Search Blocklist",
+	"version": "1.0",
+	"description": "Add search results to blocklist with color coding",
+	"permissions": ["activeTab", "nativeMessaging"],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "webext-ublacklist-helper@edwinkofler.com",
+			"data_collection_permissions": {
+				"required": ["none"]
+			}
+		}
+	},
+	"web_accessible_resources": ["*.js", "*.css"],
+	"host_permissions": [
+		"https://*.google.com/*",
+		"https://duckduckgo.com/*",
+		"https://search.brave.com/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.google.com/search*",
+				"https://duckduckgo.com/*",
+				"https://search.brave.com/search*"
+			],
+			"js": ["content.js"],
+			"css": ["styles.css"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
