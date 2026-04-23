@@ -1,7 +1,7 @@
 {
 	"name": "com.edwinkofler.webext_ublacklist_helper_native",
 	"description": "Native messaging host for uBlacklist extension",
-	"path": "/home/edwin/Documents/Computing/Experiments/webext-ublacklist-helper/native-messaging-host/hyperupcall-ublacklist-add.js",
+	"path": "%%path_replace%%/webext-ublacklist-helper/native-messaging-host/hyperupcall-ublacklist-add.js",
 	"type": "stdio",
 	"allowed_extensions": ["webext-ublacklist-helper@edwinkofler.com"]
 }

@@ -39,7 +39,7 @@ function processMessage(message) {
 		fs.appendFileSync(
 			path.join(
 				os.homedir(),
-				`.dotfiles/config/ublacklist-severity${message.severity}.txt`,
+				`.devresourcevs/ublacklist-severity${message.severity}.txt`,
 			),
 			line,
 		)
@@ -47,7 +47,7 @@ function processMessage(message) {
 		const url = new URL(message.url)
 		const filePath = path.join(
 			os.homedir(),
-			`.dotfiles/config/ublacklist-ignored.txt`,
+			`.devresourcevs/ublacklist-ignored.txt`,
 		)
 
 		const domains = fs.readFileSync(filePath, 'utf-8').trimEnd().split('\n')

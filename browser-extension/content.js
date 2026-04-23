@@ -64,7 +64,6 @@ function addBlacklistOptionsButton() {
 	}
 }
 
-// Create the blocklist button
 function createBlocklistButton(resultElement) {
 	const searchEngine = getSearchEngine()
 	const button = document.createElement('button')

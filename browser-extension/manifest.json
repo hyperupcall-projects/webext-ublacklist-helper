@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Search Blocklist",
+	"name": "uBlacklist Helper",
 	"version": "1.0",
 	"description": "Add search results to blocklist with color coding",
 	"permissions": ["activeTab", "nativeMessaging"],
